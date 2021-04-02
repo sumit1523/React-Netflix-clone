@@ -16,7 +16,7 @@ const ReactPlayerModal = ({ modalState, setShow, videoId }) => {
 			bottom: 'auto',
 			marginRight: '-50%',
 			transform: 'translate(-50%, -50%)',
-			background: 'rgb(192,192,192)'
+			background: '#535353'
 		}
 	};
 	const fetchURL = `https://api.themoviedb.org/3/movie/${videoId}/videos?api_key=${API_KEY}&language=en-US`;
@@ -43,7 +43,7 @@ const ReactPlayerModal = ({ modalState, setShow, videoId }) => {
 			style={customStyles}
 			contentLabel="Youtube Modal"
 		>
-			<h2>Welcome</h2>
+			<h2 style={{paddingLeft: '10px'}}>Welcome</h2>
 			<span className="closeModal" onClick={closeModal}></span>
 			<div style={{ padding: '10px' }}>
 				{yVideoId ?
