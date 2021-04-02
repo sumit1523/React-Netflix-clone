@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import './nav.css'
+import './nav.css';
 
 const Nav = () => {
 	const [show, handleShow] = useState(false)
 	useEffect(() => {
 		window.addEventListener("scroll", () => {
-			if (window.scrollY > 80) {
+			if (window.scrollY > 100) {
 				handleShow(true)
 			}
 			else

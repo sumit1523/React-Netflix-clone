@@ -1,5 +1,10 @@
 .closeModal {
 	position: absolute;
-    right: 10px;
+    right: 25px;
+    font-size: larger;
     top: 20px;
+    cursor: pointer;
+}
+.closeModal::before {
+	content: 'X';
 }
