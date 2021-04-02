@@ -15,7 +15,8 @@ const ReactPlayerModal = ({ modalState, setShow, videoId }) => {
 			right: 'auto',
 			bottom: 'auto',
 			marginRight: '-50%',
-			transform: 'translate(-50%, -50%)'
+			transform: 'translate(-50%, -50%)',
+			background: 'rgb(192,192,192)'
 		}
 	};
 	const fetchURL = `https://api.themoviedb.org/3/movie/${videoId}/videos?api_key=${API_KEY}&language=en-US`;
